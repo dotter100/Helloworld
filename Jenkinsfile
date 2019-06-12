@@ -20,6 +20,7 @@ pipeline {
             waitForQualityGate abortPipeline: true
         }
     }
+	}
         stage('Deploy'){
             steps{
                 sh 'cp target/Helloworld.war Helloworld.war'
