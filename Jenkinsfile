@@ -10,7 +10,7 @@ pipeline {
             environment {
                 scannerHome = tool 'SonarQubeScanner'
             }
-
+/*
     steps {
         withSonarQubeEnv('sonarqube') {
             sh "${scannerHome}/bin/sonar-scanner"
@@ -20,6 +20,7 @@ pipeline {
             waitForQualityGate abortPipeline: true
         }
     }
+    */
 	}
         stage('Deploy'){
             steps{
